@@ -37,7 +37,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-              src="Logo/Anvaya-light.png" // Replace with the correct path to your logo file
+              src="/Logo/Anvaya-light.png" // Replace with the correct path to your logo file
               alt="Anvaya Solution Logo"
               width={32}
               height={32}
