@@ -364,10 +364,14 @@ export default function ContactPage() {
               <CardDescription>
                 Visit our office or schedule a meeting to discuss your project
                 in person.
+
+                 <p className="text-sm text-muted-foreground mt-2">
+                    Guwahati, 781028.
+                  </p>
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
+              {/* <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
                   <p className="text-muted-foreground">
@@ -377,7 +381,7 @@ export default function ContactPage() {
                     123 Business Avenue, Tech City, TC 12345
                   </p>
                 </div>
-              </div>
+              </div> */}
             </CardContent>
           </Card>
         </div>

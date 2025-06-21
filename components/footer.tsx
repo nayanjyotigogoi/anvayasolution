@@ -20,8 +20,8 @@ export function Footer() {
     company: [
       { name: t("nav.about"), href: "/about" },
       { name: t("nav.careers"), href: "/careers" },
-      { name: "Blog", href: "/blog" },
-      { name: "Press", href: "/press" },
+      { name: t("nav.portfolio"), href: "/portfolio" },
+      { name: t("nav.ai-automation"), href: "/ai-automation" },
     ],
     services: [
       { name: t("nav.services"), href: "/services" },
@@ -81,7 +81,7 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-3 text-sm">
                 <MapPin className="h-4 w-4 text-muted-foreground" />
-                <span>Dhemaji, Assam</span>
+                <span>Guwahati, Assam</span>
               </div>
             </div>
           </div>

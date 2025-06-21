@@ -25,7 +25,7 @@ const projects = [
     client: "CKGeotech",
     description:
       "Professional website for a construction and geotech firm, showcasing projects, certifications, and service capabilities.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/CKGEO/ck1.jpg?height=300&width=400",
     tags: ["React", "Node.js", "MongoDB"],
     category: "Web Development",
   },
@@ -35,7 +35,7 @@ const projects = [
     client: "Ekodus Trek",
     description:
       "Adventure travel website with route highlights, booking engine, and immersive media to connect with trekking enthusiasts.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/Exodus/ekodus-1.jpg?height=300&width=400",
     tags: ["Next.js", "Stripe", "Cloudinary"],
     category: "Web Development",
   },

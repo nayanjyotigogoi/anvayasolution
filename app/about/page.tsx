@@ -26,9 +26,9 @@ const values = [
 ]
 
 const stats = [
-  { number: "150+", label: "Projects Completed" },
+  { number: "50+", label: "Projects Completed" },
   { number: "50+", label: "Happy Clients" },
-  { number: "5+", label: "Years Experience" },
+  { number: "1+", label: "Years Experience" },
   { number: "24/7", label: "Support Available" },
 ]
 

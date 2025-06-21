@@ -107,12 +107,12 @@ const projectDetails = {
       "Adventure travel website with route highlights, booking engine, and immersive media to connect with trekking enthusiasts.",
     fullDescription:
       "We collaborated with Ekodus Trek to build a visually rich and user-friendly booking platform tailored for adventure seekers. The site highlights trekking routes, provides travel guides, and integrates a seamless booking experience with immersive media and a focus on user engagement.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/Exodus/ekodus-1.jpg?height=600&width=800",
     gallery: [
-      "/trek1.jpg",
-      "/trek2.jpg",
-      "/trek3.jpg",
-      "/trek4.jpg",
+      "/Exodus/ekodus-1.jpg",
+      "/Exodus/ekodus-2.jpg",
+      "/Exodus/ekodus-3.jpg",
+      "/Exodus/ekodus-4.jpg",
     ],
     tags: ["Tourism", "Booking", "Adventure"],
     category: "Web Development",

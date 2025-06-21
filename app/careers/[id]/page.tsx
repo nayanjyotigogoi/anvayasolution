@@ -1,73 +1,85 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, MapPin, Briefcase, Clock, DollarSign, CheckCircle } from "lucide-react"
-import Link from "next/link"
-import { notFound } from "next/navigation"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowLeft,
+  MapPin,
+  Briefcase,
+  Clock,
+  DollarSign,
+  CheckCircle,
+} from "lucide-react";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 const jobDetails = {
   "1": {
-    title: "Senior Full Stack Developer",
-    department: "Engineering",
+    title: "UI/UX Designer",
+    department: "Design",
     location: "Guwahati, Assam",
     type: "Full-time",
-    experience: "4-6 years",
-    salary: "₹8,00,000 - ₹12,00,000",
+    experience: "2-4 years",
+    salary: "₹3,00,000 - ₹5,00,000",
     description:
-      "We're looking for an experienced full stack developer to join our growing team in Guwahati. You'll work on cutting-edge projects for clients across various industries.",
+      "We're seeking a talented UI/UX Designer to craft beautiful and intuitive digital experiences across web and mobile platforms for our diverse client base.",
     fullDescription:
-      "As a Senior Full Stack Developer at Anvaya Solution, you'll be at the forefront of building innovative web applications that solve real business problems. You'll work with a diverse team of talented developers, designers, and project managers to deliver high-quality solutions for our clients across Northeast India and beyond. This role offers excellent opportunities for professional growth, technical leadership, and making a significant impact on our growing company.",
+      "As a UI/UX Designer at Anvaya Solution, you will play a critical role in shaping user experiences for websites, mobile apps, and enterprise systems. You’ll collaborate closely with developers, product managers, and clients to bring ideas to life — from wireframes to high-fidelity prototypes. Your work will impact real users and businesses across the Northeast and beyond. If you’re passionate about design thinking, detail-oriented, and love solving real-world problems through visuals, this is the perfect opportunity for you.",
     requirements: [
-      "4+ years of experience in React, Node.js, and modern web technologies",
-      "Experience with cloud platforms (AWS/Azure)",
-      "Strong problem-solving skills and attention to detail",
-      "Excellent communication skills in English and Hindi",
-      "Bachelor's degree in Computer Science or related field",
-      "Experience with database design and optimization",
-      "Knowledge of DevOps practices and CI/CD pipelines",
-      "Experience with version control systems (Git)",
+      "2+ years of experience in UI/UX design",
+      "Strong portfolio showcasing web and mobile product designs",
+      "Proficiency in design tools like Figma, Adobe XD, Illustrator, Photoshop",
+      "Understanding of user research and usability testing",
+      "Familiarity with responsive and mobile-first design principles",
+      "Basic knowledge of HTML/CSS for design-developer collaboration",
+      "Experience with design systems and accessibility standards",
+      "Excellent communication and presentation skills",
     ],
     responsibilities: [
-      "Develop and maintain web applications using React and Node.js",
-      "Collaborate with design and product teams to implement user interfaces",
-      "Participate in code reviews and technical discussions",
-      "Mentor junior developers and provide technical guidance",
-      "Contribute to architectural decisions and technology choices",
-      "Optimize application performance and scalability",
-      "Work directly with clients to understand requirements",
-      "Lead technical implementation of complex features",
+      "Design user interfaces and experiences for websites, mobile apps, and dashboards",
+      "Create wireframes, mockups, and interactive prototypes",
+      "Conduct user research, interviews, and usability tests",
+      "Work closely with developers to ensure accurate implementation of designs",
+      "Maintain and evolve the company’s design system",
+      "Participate in brainstorming sessions and client meetings",
+      "Continuously iterate designs based on feedback and analytics",
+      "Ensure all designs meet accessibility and UX best practices",
     ],
     benefits: [
-      "Competitive salary with performance bonuses",
-      "Health insurance for employee and family",
-      "Flexible working hours and remote work options",
-      "Professional development opportunities and conference attendance",
-      "Annual team outings and events",
-      "Latest hardware and software tools",
-      "Career advancement opportunities",
-      "Collaborative and innovative work environment",
+      "Creative freedom and ownership over design projects",
+      "Opportunity to work across industries and project types",
+      "Access to premium design tools and software",
+      "Workshops and training sessions for upskilling",
+      "Collaborative work environment with tech and product teams",
+      "Performance-based salary increments and bonuses",
+      "Flexible working hours and work-from-home flexibility",
+      "Supportive, design-led culture",
     ],
     skills: [
-      "React.js",
-      "Node.js",
-      "JavaScript",
-      "TypeScript",
-      "MongoDB",
-      "PostgreSQL",
-      "AWS",
-      "Docker",
-      "Git",
-      "REST APIs",
-      "GraphQL",
-      "HTML/CSS",
+      "Figma",
+      "Adobe XD",
+      "Photoshop",
+      "Illustrator",
+      "User Research",
+      "Prototyping",
+      "Wireframing",
+      "UI Design",
+      "UX Design",
+      "Accessibility",
+      "Design Systems",
+      "Responsive Design",
     ],
     workEnvironment: {
-      office: "Modern office in Guwahati with latest technology",
-      remote: "Flexible remote work options available",
-      team: "Collaborative team of 15+ developers",
-      culture: "Innovation-focused with continuous learning",
+      office: "Modern studio setup in Guwahati with collaborative workspaces",
+      remote: "Remote and hybrid work options available",
+      team: "Design-focused team with cross-functional collaboration",
+      culture: "Creative, feedback-driven, and user-centric",
     },
-    growthPath: ["Senior Full Stack Developer", "Technical Lead", "Engineering Manager", "CTO Track"],
+    growthPath: [
+      "UI/UX Designer",
+      "Senior Designer",
+      "Design Lead",
+      "Creative Director",
+    ],
   },
   "2": {
     title: "AI/ML Engineer",
@@ -130,21 +142,151 @@ const jobDetails = {
       team: "Specialized AI team of 8+ researchers and engineers",
       culture: "Research-oriented with focus on innovation and learning",
     },
-    growthPath: ["AI/ML Engineer", "Senior AI Engineer", "AI Research Lead", "Head of AI"],
+    growthPath: [
+      "AI/ML Engineer",
+      "Senior AI Engineer",
+      "AI Research Lead",
+      "Head of AI",
+    ],
   },
-}
+  "3": {
+    title: "Senior React Developer",
+    department: "Frontend Engineering",
+    location: "Guwahati, Assam (Hybrid options available)",
+    type: "Full-time",
+    experience: "2+ years",
+    salary: "₹3,00,000 - ₹5,00,000 (Negotiable based on experience)",
+    description:
+      "We're looking for a skilled React developer to help build modern, high-performance user interfaces for cutting-edge web applications.",
+    fullDescription:
+      "As a Senior React Developer at Anvaya Solution, you'll be responsible for creating responsive and dynamic front-end experiences that users love. You'll work closely with our UI/UX designers and backend engineers to bring visual designs to life and deliver intuitive, scalable interfaces for both client and internal products. You’ll also have the opportunity to take ownership of frontend architecture, implement best practices, and mentor junior developers as we build the next generation of digital solutions from the Northeast.",
+    requirements: [
+      "2+ years of experience in React.js development",
+      "Strong knowledge of JavaScript (ES6+), HTML, and CSS",
+      "Experience with state management tools like Redux or Context API",
+      "Familiarity with RESTful APIs and integrating backend services",
+      "Understanding of component-based architecture and reusable UI patterns",
+      "Experience with Git and version control workflows",
+      "Basic knowledge of testing libraries like Jest or React Testing Library",
+      "Good communication and problem-solving skills",
+    ],
+    responsibilities: [
+      "Develop high-quality, reusable components using React.js",
+      "Collaborate with UI/UX designers to translate wireframes into working interfaces",
+      "Optimize applications for performance, speed, and scalability",
+      "Ensure responsive design across desktop and mobile devices",
+      "Maintain clean, modular code with documentation",
+      "Participate in code reviews and technical planning sessions",
+      "Assist in mentoring junior team members and interns",
+      "Contribute to improving frontend workflows and tooling",
+    ],
+    benefits: [
+      "Negotiable salary based on skill and experience",
+      "Creative freedom and ownership of key projects",
+      "Flexible working hours with hybrid work support",
+      "Learning & growth through peer code reviews and workshops",
+      "Access to premium development tools",
+      "Collaborative and inclusive work culture",
+      "Opportunities to work on diverse client projects",
+    ],
+    skills: [
+      "React.js",
+      "JavaScript (ES6+)",
+      "Redux",
+      "HTML5",
+      "CSS3",
+      "REST APIs",
+      "Git",
+      "Responsive Design",
+      "Component Architecture",
+      "React Hooks",
+    ],
+    workEnvironment: {
+      office: "Guwahati office with modern workstations and dev tools",
+      remote: "Hybrid flexibility for qualified candidates",
+      team: "Agile, friendly team of frontend and full-stack developers",
+      culture: "Open, feedback-driven, and innovation-focused",
+    },
+    growthPath: [
+      "Senior React Developer",
+      "Lead Frontend Developer",
+      "Frontend Architect",
+      "Engineering Manager",
+    ],
+  },
+  "4": {
+    title: "Client Acquisition Associate",
+    department: "Growth & Partnerships",
+    location: "Guwahati, Assam (Remote/Field)",
+    type: "Commission-Based",
+    experience: "No prior experience required",
+    salary: "Commission-Based (Earn per client conversion)",
+    description:
+      "Join our growth team to identify, approach, and bring in new clients looking for web, mobile, or automation solutions tailored for modern businesses.",
+    fullDescription:
+      "As a Client Acquisition Associate at Anvaya Solution, you'll be on the frontlines of our business expansion. This role involves reaching out to businesses, startups, institutions, and entrepreneurs who can benefit from our services—ranging from websites and mobile apps to AI-driven automation. It's an excellent opportunity for freshers, freelancers, or marketing enthusiasts to earn on a commission basis while learning the ropes of client outreach and tech sales. You’ll have full support from the core team and access to training and digital tools. Your contribution directly fuels the company's growth, and you’ll be rewarded for each successful lead you convert.",
+    requirements: [
+      "Strong communication and interpersonal skills",
+      "Ability to explain services in simple, engaging ways",
+      "Smartphone, internet access, and basic tech literacy",
+      "Confidence in approaching businesses or pitching via call/DM",
+      "Self-motivated, target-oriented mindset",
+      "Prior experience in sales/marketing is a plus, but not required",
+    ],
+    responsibilities: [
+      "Identify and reach out to potential clients via field visits, calls, emails, or social media",
+      "Present and explain Anvaya Solution's offerings (web, mobile, automation, AI/ML services)",
+      "Capture lead information and submit to sales/project team",
+      "Maintain a pipeline of prospective leads and follow up regularly",
+      "Provide market insights and feedback to the growth team",
+      "Achieve personal monthly conversion targets to earn commissions",
+    ],
+    benefits: [
+      "Attractive commission per closed client (₹5,000 – ₹25,000+ per project)",
+      "Bonuses for consistent performance and referrals",
+      "Flexible working hours and work-from-anywhere model",
+      "Sales and client-handling training with real scenarios",
+      "Potential to transition into full-time BD or Sales Executive role",
+      "Exposure to real-world tech consulting and startup environment",
+    ],
+    skills: [
+      "Lead Generation",
+      "Client Communication",
+      "Sales Pitching",
+      "Basic Digital Marketing",
+      "CRM tools (optional)",
+      "Cold Calling",
+      "Networking",
+      "Presentation",
+    ],
+    workEnvironment: {
+      office:
+        "Work remotely or from field; no daily office attendance required",
+      remote: "Full flexibility with performance reporting",
+      team: "Growth support team with weekly mentoring sessions",
+      culture:
+        "Result-oriented and supportive with a hustle-friendly environment",
+    },
+    growthPath: [
+      "Client Acquisition Associate",
+      "Business Development Executive",
+      "Sales Manager",
+      "Partnerships Lead",
+    ],
+  },
+};
 
 interface JobDetailPageProps {
   params: {
-    id: string
-  }
+    id: string;
+  };
 }
 
 export default function JobDetailPage({ params }: JobDetailPageProps) {
-  const job = jobDetails[params.id as keyof typeof jobDetails]
+  const job = jobDetails[params.id as keyof typeof jobDetails];
 
   if (!job) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -199,7 +341,9 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 <CardTitle className="text-2xl">About This Role</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">{job.fullDescription}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {job.fullDescription}
+                </p>
               </CardContent>
             </Card>
 
@@ -263,19 +407,27 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-2">Office</h4>
-                  <p className="text-sm text-muted-foreground">{job.workEnvironment.office}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.workEnvironment.office}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Remote Work</h4>
-                  <p className="text-sm text-muted-foreground">{job.workEnvironment.remote}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.workEnvironment.remote}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Team</h4>
-                  <p className="text-sm text-muted-foreground">{job.workEnvironment.team}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.workEnvironment.team}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Culture</h4>
-                  <p className="text-sm text-muted-foreground">{job.workEnvironment.culture}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.workEnvironment.culture}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -288,7 +440,8 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
               <CardContent className="p-6 text-center">
                 <h3 className="text-xl font-bold mb-4">Ready to Apply?</h3>
                 <p className="mb-6 opacity-90">
-                  Join our team and make an impact with innovative technology solutions.
+                  Join our team and make an impact with innovative technology
+                  solutions.
                 </p>
                 <Link href={`/careers/${params.id}/apply`}>
                   <Button size="lg" variant="secondary" className="w-full mb-3">
@@ -332,8 +485,12 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 <div className="space-y-3">
                   {job.growthPath.map((role, index) => (
                     <div key={index} className="flex items-center">
-                      <div className={`w-3 h-3 rounded-full mr-3 ${index === 0 ? "bg-primary" : "bg-muted"}`}></div>
-                      <span className={`text-sm ${index === 0 ? "font-semibold" : "text-muted-foreground"}`}>
+                      <div
+                        className={`w-3 h-3 rounded-full mr-3 ${index === 0 ? "bg-primary" : "bg-muted"}`}
+                      ></div>
+                      <span
+                        className={`text-sm ${index === 0 ? "font-semibold" : "text-muted-foreground"}`}
+                      >
                         {role}
                       </span>
                     </div>
@@ -350,7 +507,9 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-1">Department</h4>
-                  <p className="text-sm text-muted-foreground">{job.department}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.department}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Employment Type</h4>
@@ -358,7 +517,9 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Experience Level</h4>
-                  <p className="text-sm text-muted-foreground">{job.experience}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.experience}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Salary Range</h4>
@@ -366,7 +527,9 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-sm text-muted-foreground">{job.location}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {job.location}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -374,5 +537,5 @@ export default function JobDetailPage({ params }: JobDetailPageProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

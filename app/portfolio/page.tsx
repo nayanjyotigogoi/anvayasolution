@@ -46,7 +46,7 @@ const projects = [
     client: "Ekodus Trek",
     description:
       "Adventure travel website with route highlights, booking engine, and immersive media to connect with trekking enthusiasts.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "//Exodus/ekodus-1.jpg?height=400&width=600",
     tags: ["Tourism", "Booking", "Adventure"],
     category: "Web Development",
     industry: "Tourism",
