@@ -289,7 +289,7 @@ export default function ContactPage() {
                           <SelectValue placeholder="Select budget range" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="under-5k">Under ₹40,000</SelectItem>
+                          <SelectItem value="under-40k">Under ₹40,000</SelectItem>
                           <SelectItem value="40k-60k">
                             ₹40,000 - ₹60,000
                           </SelectItem>
