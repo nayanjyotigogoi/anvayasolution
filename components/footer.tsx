@@ -39,7 +39,7 @@ export function Footer() {
 
   const socialLinks = [
     { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/anvayasolution" },
     { name: "LinkedIn", icon: Linkedin, href: "#" },
     {
       name: "Instagram",
