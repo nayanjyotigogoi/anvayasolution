@@ -73,7 +73,7 @@ export function AdSlot({ position, className = "" }: AdSlotProps) {
         className="adsbygoogle"
         style={{ display: "block", width: "100%", maxWidth: "728px", height: "90px" }}
         data-ad-client="ca-pub-2463160078947861"
-        data-ad-slot="1234567890" // 🔁 Replace with actual AdSense slot ID
+        data-ad-slot="pub-2463160078947861" // 🔁 Replace with actual AdSense slot ID
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
