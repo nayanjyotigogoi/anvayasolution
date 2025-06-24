@@ -29,7 +29,7 @@ export function ContactCTA() {
               <Mail className="h-8 w-8" />
             </div>
             <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-            <p className="opacity-90">hello@anvayasolution.com</p>
+            <p className="opacity-90">admin@anvayasolution.com</p>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">

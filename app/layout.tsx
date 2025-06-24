@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Anvaya Solution - Modern Business Solutions",
   description: "Professional business solutions with cutting-edge technology and AI automation services.",
   keywords: "business solutions, AI automation, web development, consulting",
-    generator: 'v0.dev'
+    generator: 'Anvaya solution'
 }
 
 export default function RootLayout({

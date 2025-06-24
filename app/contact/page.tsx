@@ -133,7 +133,7 @@ export default function ContactPage() {
                 <CardContent>
                   <p className="text-muted-foreground">Send us an email</p>
                   <p className="font-semibold text-lg">
-                    hello@anvayasolution.com
+                    admin@anvayasolution.com
                   </p>
                 </CardContent>
               </Card>
