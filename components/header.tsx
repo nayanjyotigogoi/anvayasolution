@@ -27,6 +27,7 @@ export function Header() {
     { name: t("nav.about"), href: "/about" },
     { name: t("nav.contact"), href: "/contact" },
     { name: t("nav.careers"), href: "/careers" },
+    { name: t("blog"), href: "https://blog.anvayasolution.com" },
     { name: t("nav.ai-automation"), href: "/ai-automation" },
   ];
 
