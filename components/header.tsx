@@ -27,7 +27,7 @@ export function Header() {
     { name: t("nav.about"), href: "/about" },
     { name: t("nav.contact"), href: "/contact" },
     { name: t("nav.careers"), href: "/careers" },
-    { name: t("blog"), href: "https://blog.anvayasolution.com" },
+    { name: t("Blog"), href: "https://blog.anvayasolution.com" },
     { name: t("nav.ai-automation"), href: "/ai-automation" },
   ];
 
@@ -38,7 +38,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Image
-               src="Logo/Anvaya-Light.png" // Replace with the correct path to your logo file
+               src="Logo/Anvaya-logo-only.png" // Replace with the correct path to your logo file
               alt="Anvaya Solution Logo"
               width={32}
               height={32}

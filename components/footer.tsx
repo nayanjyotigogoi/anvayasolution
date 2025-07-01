@@ -56,7 +56,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Image
-                src="Logo/Anvaya-Light.png" // Update with your correct path if it's different
+                src="Logo/Anvaya-logo-only.png" // Update with your correct path if it's different
                 alt="Anvaya Solution Logo"
                 width={32}
                 height={32}
