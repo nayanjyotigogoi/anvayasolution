@@ -1,5 +1,8 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Target, Award, Lightbulb, Heart, Globe } from "lucide-react"
+import Image from "next/image";
+
+
 
 const values = [
   {
@@ -80,11 +83,13 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="Logo/Anvaya-Light.png?height=400&width=600"
-                alt="Our team working together"
-                className="rounded-lg shadow-lg"
-              />
+              <Image
+  src="/office-setup-crop.png"
+  alt="Our team working together"
+  width={600}
+  height={100}
+  className="rounded-lg shadow-lg object-cover"
+/>
             </div>
           </div>
         </div>
