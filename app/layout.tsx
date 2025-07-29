@@ -12,10 +12,11 @@ import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Anvaya Solution - Modern Business Solutions",
+title: "Anvaya Solution | Web, App & AI Development Studio Based in Assam",
   description:
-    "Professional business solutions with cutting-edge technology and AI automation services.",
-  keywords: "business solutions, AI automation, web development, consulting",
+    "Anvaya Solution is a modern digital studio led by a passionate founder and backed by a skilled team. We specialize in AI automation, custom web development, mobile apps, and tech solutions for startups and growing businesses across India.",
+   keywords:
+    "Anvaya solution, ANVAYA SOLTUION, web development Assam, AI automation India, mobile app development studio, Laravel Vue.js Flutter development, digital agency Northeast India, Anvaya Solution Dhemaji,Anvaya Solution Guwahati, tech team Guwahati, software agency for startups",
   generator: "Anvaya solution",
   icons: {
     icon: [
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
     apple: "/favicon_io/apple-touch-icon.png",
   },
 };
+
 
 export default function RootLayout({
   children,

@@ -1,9 +1,16 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ArrowLeft, Calendar, Users, TrendingUp, ExternalLink, Github } from "lucide-react"
-import Link from "next/link"
-import { notFound } from "next/navigation"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import {
+  ArrowLeft,
+  Calendar,
+  Users,
+  TrendingUp,
+  ExternalLink,
+  Github,
+} from "lucide-react";
+import Link from "next/link";
+import { notFound } from "next/navigation";
 
 const projectDetails = {
   "1": {
@@ -26,7 +33,11 @@ const projectDetails = {
     duration: "1 month (ongoing)",
     teamSize: "2 developers",
     budget: "₹1,00,000",
-    results: ["Seamless user experience", "Improved engagement", "Cultural preservation"],
+    results: [
+      "Seamless user experience",
+      "Improved engagement",
+      "Cultural preservation",
+    ],
     technologies: ["Laravel", "Tailwind CSS", "MySQL"],
     year: "2025",
     challenges: [
@@ -148,113 +159,124 @@ const projectDetails = {
     },
   },
   "4": {
-    title: "Paykarloo CRM System",
-    client: "Paykarloo",
+    title: "Smart Guard Edge Enterprise",
+    client: "Smart Guard Edge",
     description:
-      "Custom CRM portal for retail operations across multiple locations, including inventory, sales, and employee management.",
+      "A fully dynamic enterprise website built to represent Smart Guard Edge’s services, expertise, and vision—optimized for performance and usability.",
     fullDescription:
-      "Paykarloo needed a robust CRM tailored to the retail domain. We built a modular CRM system covering sales, inventory, employee performance, and location-based tracking—improving operations across their physical outlets while offering a single dashboard for decision-making.",
-    image: "services/crm-solutions.jpg?height=600&width=800",
+      "Smart Guard Edge required a high-impact, professional website that would reflect their identity in the security and surveillance industry. We delivered a dynamic and scalable web platform, complete with service showcase, testimonial sliders, gallery, animated transitions, and a custom CMS for effortless content updates.",
+    image: "services/smartguard-edge.jpg?height=600&width=800",
     gallery: [
-      "/crm1.jpg",
-      "/crm2.jpg",
-      "/crm3.jpg",
-      "/crm4.jpg",
+      "/smartguard1.jpg",
+      "/smartguard2.jpg",
+      "/smartguard3.jpg",
+      "/smartguard4.jpg",
     ],
-    tags: ["Retail", "CRM", "Multi-location"],
-    category: "CRM Solutions",
-    industry: "Retail Technology",
-    duration: "5 months",
-    teamSize: "4 developers",
-    budget: "₹6,00,000",
-    results: ["Streamlined operations", "Better sales tracking", "Centralized control"],
+    tags: ["Enterprise", "Dynamic Website", "CMS"],
+    category: "Enterprise Solutions",
+    industry: "Security & Surveillance",
+    duration: "1 months",
+    teamSize: "2 developers",
+    budget: "1,50,000",
+    results: [
+      "Improved brand visibility",
+      "Faster client acquisition",
+      "Simplified content management",
+    ],
     technologies: ["Laravel", "Vue.js", "MySQL"],
-    year: "2024",
+    year: "2025",
     challenges: [
-      "Managing data across branches",
-      "Custom role permissions",
-      "Inventory and sales sync",
+      "Conveying technical services visually",
+      "Maintaining brand consistency",
+      "Enabling client-side content control",
     ],
     solutions: [
-      "Role-based access control system",
-      "Integrated inventory & sales workflows",
-      "Analytics dashboard with real-time metrics",
+      "Custom-built CMS for full content control",
+      "Framer Motion & Tailwind-based animations",
+      "Modular component architecture for flexibility",
     ],
     features: [
-      "Sales & Inventory Module",
-      "Employee Management",
-      "Real-time Reporting",
-      "Role-Based Access Control",
-      "Branch Performance Comparison",
+      "Service Showcase",
+      "Testimonial Slider",
+      "Photo & Video Gallery",
+      "CMS Integration",
+      "Responsive Design",
+      "SEO Optimization",
     ],
     testimonial: {
       quote:
-        "The Anvaya Solution team built us a powerful CRM portal that has completely streamlined our multi-location retail operations. Their understanding of business needs and tech execution is top-notch.",
-      author: "Paykarloo",
-      position: "Retail Technology",
+        "Anvaya Solution transformed our vision into a digital experience that truly speaks for our brand. The execution, design quality, and performance have exceeded our expectations.",
+      author: "Smart Guard Edge",
+      position: "Security Solutions Provider",
     },
   },
   "5": {
-    title: "StaffPro HR Management System",
-    client: "Raj Sharma",
+    title: "Dihingia Hotel & Restaurant Cum Bar Website + App",
+    client: "Dihingia Hotel",
     description:
-      "Robust HR management platform with employee onboarding, attendance, leave tracking, and performance evaluation features.",
+      "A complete digital presence for Dihingia Hotel, including a fully dynamic website and cross-platform mobile app for room booking, restaurant services, and real-time management.",
     fullDescription:
-      "We created a comprehensive HR solution for StaffPro to handle every aspect of employee lifecycle management. From onboarding to performance tracking, the platform offers a centralized hub with real-time analytics and automation to streamline HR tasks.",
-    image: "/placeholder.svg?height=600&width=800",
+      "Dihingia Hotel needed a modern and seamless digital solution to manage bookings, display menus, and engage customers. We developed both a responsive website and a Flutter-based mobile app powered by Laravel and Vue.js, ensuring smooth management of hospitality operations with real-time updates, ease of content control, and a polished user experience.",
+    image: "/services/dihingia-hotel.jpg?height=600&width=800",
     gallery: [
-      "/hr1.jpg",
-      "/hr2.jpg",
-      "/hr3.jpg",
-      "/hr4.jpg",
+      "/dihingia1.jpg",
+      "/dihingia2.jpg",
+      "/dihingia3.jpg",
+      "/dihingia4.jpg",
     ],
-    tags: ["HR", "Automation", "Staff Management"],
-    category: "Enterprise Solutions",
-    industry: "Professional Services",
-    duration: "4 months",
-    teamSize: "4 developers",
-    budget: "₹5,00,000",
-    results: ["Process automation", "Time saving", "Enhanced reporting"],
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    year: "2024",
+    tags: ["Hospitality", "Booking System", "Mobile Integration"],
+    category: "Web Development & Mobile Development",
+    industry: "Hospitality",
+    duration: "2 months",
+    teamSize: "3 developers",
+    budget: "₹2,00,000",
+    results: [
+      "Improved direct booking flow",
+      "Unified management of hotel and restaurant services",
+      "Enhanced customer experience through mobile access",
+    ],
+    technologies: ["Laravel", "Vue.js", "MySQL", "Flutter"],
+    year: "2025",
     challenges: [
-      "Complex attendance policies",
-      "Employee self-service access",
-      "Handling performance data securely",
+      "Syncing restaurant orders and room booking data",
+      "Designing a user-friendly dual-platform experience",
+      "Real-time content and menu updates",
     ],
     solutions: [
-      "Modular leave and attendance tracking",
-      "Secure employee portal",
-      "Customizable performance KPIs",
+      "Integrated backend API for both web and app",
+      "Mobile-first UI with responsive web design",
+      "Dynamic CMS modules for easy updates",
     ],
     features: [
-      "Employee Onboarding",
-      "Attendance & Leave Management",
-      "Performance Evaluation Tools",
-      "HR Analytics Dashboard",
-      "Self-Service Portal",
+      "Room Booking Module",
+      "Restaurant Order Management",
+      "Gallery & Menu Display",
+      "Contact & Location Info",
+      "Mobile App Integration",
+      "Admin CMS Dashboard",
     ],
     testimonial: {
       quote:
-        "Implementing Anvaya Solution's HR management system has been a huge win for our company. The solution has made processes significantly more efficient and transparent.",
-      author: "Raj Sharma",
-      position: "StaffPro",
+        "Anvaya Solution delivered exactly what we needed—a smooth, modern website and app that helps us manage operations and reach more guests. Great work and communication throughout.",
+      author: "Dihingia Hotel",
+      position: "Management Team",
     },
   },
-};
 
+  //new addition
+};
 
 interface ProjectDetailPageProps {
   params: {
-    id: string
-  }
+    id: string;
+  };
 }
 
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const project = projectDetails[params.id as keyof typeof projectDetails]
+  const project = projectDetails[params.id as keyof typeof projectDetails];
 
   if (!project) {
-    notFound()
+    notFound();
   }
 
   return (
@@ -275,9 +297,13 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <Badge variant="secondary">{project.category}</Badge>
             <Badge variant="outline">{project.industry}</Badge>
-            <Badge className="business-gradient text-white">{project.year}</Badge>
+            <Badge className="business-gradient text-white">
+              {project.year}
+            </Badge>
           </div>
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4">{project.title}</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-4">
+            {project.title}
+          </h1>
           <p className="text-xl text-muted-foreground mb-6">{project.client}</p>
 
           <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
@@ -314,7 +340,9 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
                 <CardTitle className="text-2xl">Project Overview</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">{project.fullDescription}</p>
+                <p className="text-muted-foreground leading-relaxed">
+                  {project.fullDescription}
+                </p>
               </CardContent>
             </Card>
 
@@ -392,11 +420,17 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             {/* Testimonial */}
             <Card className="bg-secondary/30">
               <CardContent className="p-8">
-                <blockquote className="text-lg italic mb-4">"{project.testimonial.quote}"</blockquote>
+                <blockquote className="text-lg italic mb-4">
+                  "{project.testimonial.quote}"
+                </blockquote>
                 <div className="flex items-center">
                   <div>
-                    <div className="font-semibold">{project.testimonial.author}</div>
-                    <div className="text-sm text-muted-foreground">{project.testimonial.position}</div>
+                    <div className="font-semibold">
+                      {project.testimonial.author}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {project.testimonial.position}
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -413,23 +447,33 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
               <CardContent className="space-y-4">
                 <div>
                   <h4 className="font-semibold mb-1">Client</h4>
-                  <p className="text-sm text-muted-foreground">{project.client}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {project.client}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Duration</h4>
-                  <p className="text-sm text-muted-foreground">{project.duration}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {project.duration}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Team Size</h4>
-                  <p className="text-sm text-muted-foreground">{project.teamSize}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {project.teamSize}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Budget</h4>
-                  <p className="text-sm text-muted-foreground">{project.budget}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {project.budget}
+                  </p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Industry</h4>
-                  <p className="text-sm text-muted-foreground">{project.industry}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {project.industry}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -470,8 +514,12 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
             {/* Actions */}
             <Card className="business-gradient text-white">
               <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold mb-4">Interested in Similar Project?</h3>
-                <p className="mb-6 opacity-90">Let's discuss how we can help transform your business.</p>
+                <h3 className="text-xl font-bold mb-4">
+                  Interested in Similar Project?
+                </h3>
+                <p className="mb-6 opacity-90">
+                  Let's discuss how we can help transform your business.
+                </p>
                 <div className="space-y-3">
                   <Button size="lg" variant="secondary" className="w-full">
                     <ExternalLink className="mr-2 h-4 w-4" />
@@ -497,5 +545,5 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

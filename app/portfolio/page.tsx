@@ -1,11 +1,17 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Calendar, Users, TrendingUp } from "lucide-react"
-import { useLanguage } from "@/components/language-provider"
+import { useState } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { ExternalLink, Calendar, Users, TrendingUp } from "lucide-react";
+import { useLanguage } from "@/components/language-provider";
 
 const projects = [
   {
@@ -20,7 +26,11 @@ const projects = [
     industry: "Education",
     duration: "1 months (ongoing)",
     teamSize: "2 developers",
-    results: ["Seamless user experience", "Improved engagement", "Cultural preservation"],
+    results: [
+      "Seamless user experience",
+      "Improved engagement",
+      "Cultural preservation",
+    ],
     technologies: ["Laravel", "Tailwind CSS", "MySQL"],
     year: "2025",
   },
@@ -38,7 +48,7 @@ const projects = [
     teamSize: "2 developers",
     results: ["Better project visibility", "Improved brand credibility"],
     technologies: ["React", "Node.js", "MongoDB"],
-    year: "2025",
+    year: "2024",
   },
   {
     id: 3,
@@ -54,39 +64,47 @@ const projects = [
     teamSize: "3 developers",
     results: ["Increased bookings", "Engaging visual design", "Improved UX"],
     technologies: ["Next.js", "Stripe", "Cloudinary"],
-    year: "2025",
+    year: "2024",
   },
   {
     id: 4,
-    title: "Paykarloo CRM System",
-    client: "Paykarloo",
+    title: "Smart Guard Edge Enterprise",
+    client: "Smart Guard Edge",
     description:
-      "Custom CRM portal for retail operations across multiple locations, including inventory, sales, and employee management.",
-    image: "services/crm-solutions.jpg?height=400&width=600",
-    tags: ["Retail", "CRM", "Multi-location"],
-    category: "CRM Solutions",
-    industry: "Retail Technology",
-    duration: "5 months",
-    teamSize: "4 developers",
-    results: ["Streamlined operations", "Better sales tracking", "Centralized control"],
+      "A fully dynamic enterprise website built to showcase services, testimonials, gallery, and media content, complete with a custom CMS for easy updates and scalability.",
+    image: "services/smartguard-edge.jpg?height=400&width=600",
+    tags: ["Enterprise", "Dynamic Website", "CMS"],
+    category: "Enterprise Solutions",
+    industry: "Security & Surveillance",
+    duration: "1 months",
+    teamSize: "2 developers",
+    results: [
+      "Improved online presence",
+      "Client trust building",
+      "Easy content management",
+    ],
     technologies: ["Laravel", "Vue.js", "MySQL"],
-    year: "2024",
+    year: "2025",
   },
   {
     id: 5,
-    title: "StaffPro HR Management System",
-    client: "Raj Sharma",
+    title: "Dihingia Hotel & Restaurant Cum Bar Website + App",
+    client: "Dihingia Hotel",
     description:
-      "Robust HR management platform with employee onboarding, attendance, leave tracking, and performance evaluation features.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["HR", "Automation", "Staff Management"],
-    category: "Enterprise Solutions",
-    industry: "Professional Services",
-    duration: "4 months",
-    teamSize: "4 developers",
-    results: ["Process automation", "Time saving", "Enhanced reporting"],
-    technologies: ["React", "Node.js", "PostgreSQL"],
-    year: "2024",
+      "A complete digital solution with a fully dynamic website and a cross-platform mobile app, offering real-time room booking, restaurant services, and customer engagement.",
+    image: "/services/dihingia-hotel.jpg?height=400&width=600",
+    tags: ["Hospitality", "Booking System", "Mobile Integration"],
+    category: "Web Development & Mobile Development",
+    industry: "Hospitality",
+    duration: "2 months",
+    teamSize: "3 developers",
+    results: [
+      "Increased direct bookings",
+      "Streamlined service requests",
+      "Unified digital presence",
+    ],
+    technologies: ["Laravel", "Vue.js", "MySQL", "Flutter"],
+    year: "2025",
   },
   {
     id: 6,
@@ -100,7 +118,11 @@ const projects = [
     industry: "Startup",
     duration: "1.5 months",
     teamSize: "2 designers",
-    results: ["45% increase in user retention", "Improved NPS score", "Cleaner interface"],
+    results: [
+      "45% increase in user retention",
+      "Improved NPS score",
+      "Cleaner interface",
+    ],
     technologies: ["Figma", "Adobe XD", "UserTesting"],
     year: "2024",
   },
@@ -125,18 +147,21 @@ const industries = [
   "Startup",
 ];
 
-
 export default function PortfolioPage() {
-  const [selectedCategory, setSelectedCategory] = useState("All")
-  const [selectedIndustry, setSelectedIndustry] = useState("All")
-  const [selectedProject, setSelectedProject] = useState<(typeof projects)[0] | null>(null)
-  const { t } = useLanguage()
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedIndustry, setSelectedIndustry] = useState("All");
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null);
+  const { t } = useLanguage();
 
   const filteredProjects = projects.filter((project) => {
-    const categoryMatch = selectedCategory === "All" || project.category === selectedCategory
-    const industryMatch = selectedIndustry === "All" || project.industry === selectedIndustry
-    return categoryMatch && industryMatch
-  })
+    const categoryMatch =
+      selectedCategory === "All" || project.category === selectedCategory;
+    const industryMatch =
+      selectedIndustry === "All" || project.industry === selectedIndustry;
+    return categoryMatch && industryMatch;
+  });
 
   return (
     <div className="min-h-screen py-20">
@@ -145,27 +170,36 @@ export default function PortfolioPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6">Our Portfolio</h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Showcasing our successful projects across various industries. From manufacturing ERP systems to AI-powered
-            solutions, we've helped businesses in Assam and beyond achieve digital transformation.
+            Showcasing our successful projects across various industries. From
+            manufacturing ERP systems to AI-powered solutions, we've helped
+            businesses in Assam and beyond achieve digital transformation.
           </p>
         </div>
 
         {/* Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">25+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              25+
+            </div>
             <div className="text-muted-foreground">Projects Completed</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">20+</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              20+
+            </div>
             <div className="text-muted-foreground">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">99.9%</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              99.9%
+            </div>
             <div className="text-muted-foreground">Uptime</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">4.8/5</div>
+            <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+              4.8/5
+            </div>
             <div className="text-muted-foreground">Client Satisfaction</div>
           </div>
         </div>
@@ -178,10 +212,16 @@ export default function PortfolioPage() {
               {categories.map((category) => (
                 <Button
                   key={category}
-                  variant={selectedCategory === category ? "default" : "outline"}
+                  variant={
+                    selectedCategory === category ? "default" : "outline"
+                  }
                   size="sm"
                   onClick={() => setSelectedCategory(category)}
-                  className={selectedCategory === category ? "business-gradient text-white" : ""}
+                  className={
+                    selectedCategory === category
+                      ? "business-gradient text-white"
+                      : ""
+                  }
                 >
                   {category}
                 </Button>
@@ -195,10 +235,16 @@ export default function PortfolioPage() {
               {industries.map((industry) => (
                 <Button
                   key={industry}
-                  variant={selectedIndustry === industry ? "default" : "outline"}
+                  variant={
+                    selectedIndustry === industry ? "default" : "outline"
+                  }
                   size="sm"
                   onClick={() => setSelectedIndustry(industry)}
-                  className={selectedIndustry === industry ? "business-gradient text-white" : ""}
+                  className={
+                    selectedIndustry === industry
+                      ? "business-gradient text-white"
+                      : ""
+                  }
                 >
                   {industry}
                 </Button>
@@ -210,7 +256,10 @@ export default function PortfolioPage() {
         {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
-            <Card key={project.id} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
+            <Card
+              key={project.id}
+              className="group overflow-hidden hover:shadow-xl transition-all duration-300"
+            >
               <div className="relative overflow-hidden">
                 <img
                   src={project.image || "/placeholder.svg"}
@@ -218,12 +267,18 @@ export default function PortfolioPage() {
                   className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                  <Button size="sm" variant="secondary" onClick={() => setSelectedProject(project)}>
+                  <Button
+                    size="sm"
+                    variant="secondary"
+                    onClick={() => setSelectedProject(project)}
+                  >
                     <ExternalLink className="h-4 w-4 mr-2" />
                     View Details
                   </Button>
                 </div>
-                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">{project.year}</Badge>
+                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground">
+                  {project.year}
+                </Badge>
               </div>
               <CardContent className="p-6">
                 <div className="flex items-center justify-between mb-2">
@@ -235,8 +290,12 @@ export default function PortfolioPage() {
                   </Badge>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground mb-2">Client: {project.client}</p>
-                <p className="text-muted-foreground mb-4 text-sm line-clamp-3">{project.description}</p>
+                <p className="text-sm text-muted-foreground mb-2">
+                  Client: {project.client}
+                </p>
+                <p className="text-muted-foreground mb-4 text-sm line-clamp-3">
+                  {project.description}
+                </p>
 
                 <div className="flex items-center justify-between text-xs text-muted-foreground mb-4">
                   <div className="flex items-center">
@@ -264,7 +323,10 @@ export default function PortfolioPage() {
 
                 <div className="space-y-2">
                   {project.results.slice(0, 2).map((result, index) => (
-                    <div key={index} className="flex items-center text-xs text-muted-foreground">
+                    <div
+                      key={index}
+                      className="flex items-center text-xs text-muted-foreground"
+                    >
                       <TrendingUp className="h-3 w-3 mr-2 text-green-500" />
                       {result}
                     </div>
@@ -281,14 +343,24 @@ export default function PortfolioPage() {
             className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50"
             onClick={() => setSelectedProject(null)}
           >
-            <Card className="max-w-4xl w-full max-h-[90vh] overflow-y-auto" onClick={(e) => e.stopPropagation()}>
+            <Card
+              className="max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+              onClick={(e) => e.stopPropagation()}
+            >
               <CardHeader>
                 <div className="flex justify-between items-start">
                   <div>
-                    <CardTitle className="text-2xl mb-2">{selectedProject.title}</CardTitle>
-                    <CardDescription className="text-lg">Client: {selectedProject.client}</CardDescription>
+                    <CardTitle className="text-2xl mb-2">
+                      {selectedProject.title}
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      Client: {selectedProject.client}
+                    </CardDescription>
                   </div>
-                  <Button variant="ghost" onClick={() => setSelectedProject(null)}>
+                  <Button
+                    variant="ghost"
+                    onClick={() => setSelectedProject(null)}
+                  >
                     ×
                   </Button>
                 </div>
@@ -323,7 +395,11 @@ export default function PortfolioPage() {
                     <h4 className="font-semibold mb-2">Technologies Used</h4>
                     <div className="flex flex-wrap gap-1">
                       {selectedProject.technologies.map((tech) => (
-                        <Badge key={tech} variant="secondary" className="text-xs">
+                        <Badge
+                          key={tech}
+                          variant="secondary"
+                          className="text-xs"
+                        >
                           {tech}
                         </Badge>
                       ))}
@@ -345,7 +421,9 @@ export default function PortfolioPage() {
 
                 <div>
                   <h4 className="font-semibold mb-2">Project Description</h4>
-                  <p className="text-muted-foreground">{selectedProject.description}</p>
+                  <p className="text-muted-foreground">
+                    {selectedProject.description}
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -354,9 +432,12 @@ export default function PortfolioPage() {
 
         {/* CTA Section */}
         <div className="mt-20 text-center bg-secondary/30 rounded-2xl p-12">
-          <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
+          <h2 className="text-3xl font-bold mb-4">
+            Ready to Start Your Project?
+          </h2>
           <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can help transform your business with innovative technology solutions.
+            Let's discuss how we can help transform your business with
+            innovative technology solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="business-gradient text-white">
@@ -369,5 +450,5 @@ export default function PortfolioPage() {
         </div>
       </div>
     </div>
-  )
+  );
 }
