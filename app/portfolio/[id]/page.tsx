@@ -165,7 +165,7 @@ const projectDetails = {
       "A fully dynamic enterprise website built to represent Smart Guard Edge’s services, expertise, and vision—optimized for performance and usability.",
     fullDescription:
       "Smart Guard Edge required a high-impact, professional website that would reflect their identity in the security and surveillance industry. We delivered a dynamic and scalable web platform, complete with service showcase, testimonial sliders, gallery, animated transitions, and a custom CMS for effortless content updates.",
-    image: "services/smartguard-edge.jpg?height=600&width=800",
+    image: "/services/smartguard-edge.jpg?height=600&width=800",
     gallery: [
       "/smartguard1.jpg",
       "/smartguard2.jpg",
